@@ -3,7 +3,7 @@ package org.javaboy.tcdasource.proxy;
 
 
 import org.javaboy.tcdasource.filter.Filter;
-import org.javaboy.tcdasource.filter.FilterChainImpl;
+import org.javaboy.tcdasource.filter.impl.FilterChainImpl;
 
 import java.io.InputStream;
 import java.io.Reader;

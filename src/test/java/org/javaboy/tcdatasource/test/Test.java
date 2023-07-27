@@ -1,10 +1,10 @@
-package org.javaboy.tcdasource.unittest;
+package org.javaboy.tcdatasource.test;
 
 
 import org.javaboy.tcdasource.TCConnection;
 import org.javaboy.tcdasource.TCDataSource;
-import org.javaboy.tcdasource.filter.LogFilter;
-import org.javaboy.tcdasource.filter.StatFilter;
+import org.javaboy.tcdasource.filter.impl.LogFilter;
+import org.javaboy.tcdasource.filter.impl.StatFilter;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

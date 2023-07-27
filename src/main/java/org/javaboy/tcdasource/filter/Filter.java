@@ -1,6 +1,7 @@
 package org.javaboy.tcdasource.filter;
 
 
+import org.javaboy.tcdasource.filter.impl.FilterChainImpl;
 import org.javaboy.tcdasource.proxy.PreparedStatementProxy;
 
 import java.sql.ResultSet;
