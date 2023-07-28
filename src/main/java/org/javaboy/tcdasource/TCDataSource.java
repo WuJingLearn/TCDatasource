@@ -285,7 +285,6 @@ public class TCDataSource extends AbstractTiaoCaoDataSource {
                 throw new RuntimeException(e);
             }
         }
-
     }
 
 
@@ -435,5 +434,9 @@ public class TCDataSource extends AbstractTiaoCaoDataSource {
 
     public void setLazyInit(boolean lazyInit) {
         this.lazyInit = lazyInit;
+    }
+
+    public void setTimeBetweenEvictionRunMills(long timeBetweenEvictionRunMills) {
+        this.timeBetweenEvictionRunMills = timeBetweenEvictionRunMills;
     }
 }

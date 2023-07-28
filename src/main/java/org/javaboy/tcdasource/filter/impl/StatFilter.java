@@ -50,4 +50,8 @@ public class StatFilter implements Filter {
         }
 
     }
+
+    public void setSlowSqlMills(long slowSqlMills) {
+        this.slowSqlMills = slowSqlMills;
+    }
 }

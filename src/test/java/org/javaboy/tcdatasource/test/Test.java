@@ -6,6 +6,7 @@ import org.javaboy.tcdasource.TCDataSource;
 import org.javaboy.tcdasource.filter.impl.LogFilter;
 import org.javaboy.tcdasource.filter.impl.StatFilter;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,13 +20,19 @@ public class Test {
         datasource.setUrl(url);
         datasource.setPassword("root1234");
         datasource.setUsername("root");
-
+        datasource.setLazyInit(false);
+        datasource.setInitialSize(5);
+        datasource.setMinIdle(5);
         datasource.setMaxActive(10);
         datasource.setMaxWaitThreadCount(10);
-
+        datasource.setMinEvictableIdleTimeMillis(1000L * 60L * 30L);
+        datasource.setMaxEvictableIdleTimeMillis(1000 * 60 * 60 * 7);
+        datasource.setTimeBetweenEvictionRunMills(1000 * 60);
         datasource.addFilter(new LogFilter());
-        datasource.addFilter(new StatFilter());
-        test1(datasource.getConnection());
+        StatFilter statFilter = new StatFilter();
+        statFilter.setSlowSqlMills(1000 * 3L);
+        datasource.addFilter(statFilter);
+        Connection connection = datasource.getConnection();
     }
 
     static void test2(TCDataSource dataSource) {

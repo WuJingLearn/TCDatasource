@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="957f4c45-7b27-4eac-93f1-2444b32b0d31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reademe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/AbstractTiaoCaoDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/ConnectionHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/TCConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/TCDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/execption/GetConnectionTimeoutException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/FilterChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/FilterChainImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/LogFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/StatFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/proxy/PreparedStatementProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/unittest/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/util/JdbcUtil.java" afterDir="false" />
+    <list default="true" id="957f4c45-7b27-4eac-93f1-2444b32b0d31" name="Changes" comment="tc datasource">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reademe.md" beforeDir="false" afterPath="$PROJECT_DIR$/reademe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/TCDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/TCDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/impl/StatFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javaboy/tcdasource/filter/impl/StatFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/javaboy/tcdatasource/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/javaboy/tcdatasource/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/jingmac/IdeaProjects/TCDataSource/src/main/java/org/javaboy/tcdasource",
@@ -60,10 +48,12 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "418738f9f30bde621187e04014986e43",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,11 +64,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaboy.tcdasource.unittest.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.javaboy.tcdatasource.test.Test" />
       <module name="TCDataSource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaboy.tcdasource.unittest.*" />
+          <option name="PATTERN" value="org.javaboy.tcdatasource.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,8 +91,26 @@
       <option name="presentableId" value="Default" />
       <updated>1690295254403</updated>
       <workItem from="1690295255839" duration="121000" />
-      <workItem from="1690469073680" duration="747000" />
+      <workItem from="1690469073680" duration="1528000" />
+      <workItem from="1690517733196" duration="1875000" />
     </task>
+    <task id="LOCAL-00001" summary="tc datasource">
+      <option name="closed" value="true" />
+      <created>1690469851505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469851505</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tc datasource">
+      <option name="closed" value="true" />
+      <created>1690470080785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690470080785</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,5 +126,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tc datasource" />
+    <option name="LAST_COMMIT_MESSAGE" value="tc datasource" />
   </component>
 </project>
